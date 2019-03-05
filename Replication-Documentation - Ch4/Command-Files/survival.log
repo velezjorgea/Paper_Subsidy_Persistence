@@ -1,0 +1,87 @@
+----------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  C:\Users\velez\Desktop\Paper 4.2\Replication-Documentation - Ch4\Comm
+> and-Files\survival.log
+  log type:  text
+ opened on:   5 Mar 2019, 13:55:30
+
+. 
+. 
+. clear
+
+. //Globals
+. 
+. global path "C:\Users\velez\Desktop\Paper 4.2\Replication-Documentation - Ch4\Co
+> mmand-Files"
+
+. global Output "${path}\Output"
+
+. 
+. use  "$Output\Panel_filtered_large.dta", replace
+file C:\Users\velez\Desktop\Paper 4.2\Replication-Documentation -
+    Ch4\Command-Files\Output\Panel_filtered_large.dta not found
+r(601);
+
+end of do-file
+r(601);
+
+end of do-file
+
+r(601);
+
+. do "C:\Users\velez\AppData\Local\Temp\STD00000000.tmp"
+
+. ********************************************************************************
+. *******************  Master: Master's Thesis MPP 2017-2018   *******************
+. *********************       Jorge Velez- i6157223         **********************
+. *********************       Date: 13-Aug-2018             **********************
+. *****************         Supervisor: Elisa Calza         **********************
+. ********************************************************************************
+. 
+. set more off
+
+. clear all
+
+. macro drop _all
+
+. 
+. //Contents
+. *                       1. Importing
+. *                       2. Cleaning data set, labeling and inspection
+. *           3. Sample Filters
+. *           4.1 Estimations: SMEs 
+. *                       4.2 Estimations: large firms 
+. 
+. **********************************************************************
+. 
+. //Globals
+. 
+. global path "C:\Users\velez\Desktop\Paper 4.2\Replication-Documentation - Ch4"
+
+. **Data Analysis  folder******
+. 
+. global analysis "${path}\Analysis-Data"
+
+. 
+. **Codes  folder******
+. 
+. global dofiles "${path}\Command-Files"
+
+. 
+. **Original Data folder ******
+. 
+. global rawdata "${path}\Original-Data"
+
+. 
+. **Transformed Data folder ******
+. 
+. global Output "${path}\Output"
+
+. 
+. 
+. **Documents folder ******
+. 
+. global document "${path}\Documents"
+
+. 
+. capture log close

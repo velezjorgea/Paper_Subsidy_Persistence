@@ -1,0 +1,120 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{ltablex}
+\usepackage{float}
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={210mm,297mm},
+	left=20mm,
+	right=20mm,
+	top=20mm,
+	bottom=20mm,
+}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Readme file}
+\rfoot{\thepage}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\hypersetup{pdfstartview={XYZ null null 0.75}}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{lscape}
+\usepackage[natbibapa]{apacite}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{wasysym}
+\usepackage[flushleft]{threeparttable}
+%\usepackage[all]{hypcap}
+\usepackage{standalone}
+\sisetup{input-symbols = ()}
+\begin{document}
+	
+\title{
+\textbf{ReadMe File} \\
+\begin{large}
+Chapter 4: Duration dependence in R\&D Subsidization\\
+Thesis: Jorge Vélez\\
+\end{large} }
+\maketitle
+
+\section{Introduction}
+
+
+The replication documentation that this Read Me file accompanies was constructed according to the Specifications of the TIER Protocol (version 3.0).
+The data management and analysis for this project were conducted with Stata SE, 64 bit, version 14, on a Windows operating system.  Minor modifications may be required to run the do-files on a Mac or Linux operating system.\\
+
+Note: This work contains statistical data which is Crown Copyright. The request for access to the database must be made directly to the INE (Instituto Nacional Estadística- Spain). More Info: \href{http://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica\_C\&cid=1254736176755\&menu=resultados\&secc=1254736195616\&idp=1254735576669}{\textcolor{blue}{here}}.  
+
+\section{The content and organization of the replication documentation}
+
+The documentation for the project is stored in folders that are organized as illustrated below:
+
+\begin{enumerate}
+	\item “Replication-Documentation” (the main folder)
+	\begin{itemize}
+		\item “Documents” (sub-folder of the “Replication-Documentation” folder)
+		\begin{itemize}
+		\item ReadMe.pdf: This document.
+			\end{itemize}
+		\item “Original-Data” (sub-folder of the “Replication-Documentation” folder)
+		\begin{itemize}
+			\item 2005.dta:  Data file identical to the importable stata format
+			\item 2006.dta:  Data file identical to the importable stata format
+			\item 2007.dta:  Data file identical to the importable stata format
+			\item 2008.dta:  Data file identical to the importable stata format
+			\item 2009.dta:  Data file identical to the importable stata format
+			\item 2010.dta:  Data file identical to the importable stata format
+			\item 2011.dta:  Data file identical to the importable stata format
+			\item 2012.dta:  Data file identical to the importable stata format
+			\item 2013.dta:  Data file identical to the importable stata format
+			\item 2014.dta:  Data file identical to the importable stata format
+			\item 2015.dta:  Data file identical to the importable stata format
+		\end{itemize}
+	\item “Command-Files” (sub-folder of the of the “Replication-Documentation” folder) with the do-files. 
+	\begin{itemize}
+		\item Master
+		\item 1. Importing
+		\item 2. Cleaning data set, labeling and inspection
+		\item 3. Sample Filters
+		\item 4.1 Estimations: SMEs 
+		\item 4.2 Estimations: large firms 
+	\end{itemize}
+\item “Output” (sub-folder of the “Replication-Documentation” folder): Tables and data modification are stored in this folder. 
+	\end{itemize}
+\end{enumerate}
+
+\section{Instructions}
+
+To reproduce the tables, figures and statistical results reported in the text of the paper:
+
+\begin{enumerate}
+	\item Copy the “Replication-Documentation” folder, and all of its contents, onto the computer you are working on.
+	
+	\item Launch Stata, and set the working directory to the “Command- Files” folder. \\ 
+	
+	\textbf{\textit{Note:}}  Throughout the entire process of replicating the results of the paper, Stata’s working directory should remain set to the “Command-Files” folder.  Commands that save or open files specify the path to the directory where the file is to be saved or opened relative to the “Command-Files” folder.
+	
+	\item Execute the master do file which runs once at a time the different “inputs do files” (import. Cleaning, estimations)\\
+	
+\textbf{\textit{Notes:}} 
+\begin{enumerate}
+	\item Before executing the master do-file, you should install David Roodman’s cmp command. It is a user-written addition to Stata. In order to use it, you must give the commands ssc install cmp and ssc install ghk2 when connected to the Internet. This will install the latest version of the program, which has been updated since its description in a Stata Journal article, “Fitting fully observed recursive mixed-process models with cmp,” 11:2, 159–206.
+	\item Before execuring the master do-file, you should install pgmhaz8 command. This is a program for discrete time proportional hazards regression, estimating the models proposed by Prentice and Gloeckler (Biometrics 1978) and Meyer (Econometrica 1990), and was circulated in the Stata Technical Bulletin STB-39 (insert ‘sbe17’). pgmhaz runs with Stata version 5 or later. Users with version 8.2 should use pgmhaz8.
+\end{enumerate}
+
+	
+\end{enumerate}
+
+
+\end{document}
+          
