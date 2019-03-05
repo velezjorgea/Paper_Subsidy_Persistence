@@ -1,9 +1,10 @@
-# Paper_Subsidy_Persistence
-R&amp;D subsidization Persistence
+# Paper: R&D Subsidization persistence: Chapter 4
 
 The replication documentation that this Read Me file accompanies was constructed according to the Specifications of the TIER Protocol (version 3.0). The data management and analysis for this project were conducted with Stata SE, 64 bit, version 14, on a Windows operating system. Minor modifications may be required to run the do-files on a Mac or Linux operating system.
 Note: This work contains statistical data which is Crown Copyright. The request for access to the database must be made directly to the INE (Instituto Nacional Estadística- Spain).
+
 # How to use this Repository
+
 This repository contains all the files necessary to replicate the results shown in the paper. To do so, follow the instructions below.
 1. Open the Project repo on GitHub. If you opened this project's landing page, you can do that by clicking on View the Project on GitHub on the left column of the page. If you're already on the GitHub repo, skip this step.
 2. Download the replication folder by clickling on the Clone or download button on the main page of the repository. If you don't have GitHub Desktop installed in your computer, you can still download the files by selecting Donwload ZIP. In this case, unzip the downloaded file.
